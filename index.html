@@ -956,7 +956,7 @@
                         echo "<div class='error'>".$_SESSION['error_message']."</div>";
                         unset($_SESSION['error_message']);
                     }?>
-                        <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" name="sentMessage" enctype="text/plain">
+                        <form  action="lib/mailer_script.php" method="post" name="sentMessage" enctype="text/plain">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" placeholder="Your Name" required="required" name="yourName" />
